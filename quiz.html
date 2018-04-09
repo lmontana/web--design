@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Character Quiz</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Aladin" rel="stylesheet">
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<style type="text/css">
+		#nav {
+			font-family:'Aladin', cursive;
+			font-size: 80px;
+			color: #f495d4;
+			font-weight: bold;
+			padding-top: 15px;
+			display: block;
+			margin:auto;
+			padding-left: 10px;
+		}
+		#cover-photo {
+			background: url(http://speakslovak.info/wp-content/uploads/spongebob-flowers-sky-flowers-in-spongebob-squarepants.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			height: 150px;
+		}
+		.cool-button {
+			background-color: pink;
+		}
+		.cool-button:hover {
+			background-color: white;
+			color:pink;
+		}
+		#imgz{
+			height:100px;
+			width: 150px
+		}
+	</style>
+
+	
+</head>
+<body>
+<div class="container-fluid">
+	<div class="row">
+			<div class="col-12" id="cover-photo">
+				<div id="nav" class="row">
+					<p id="title"><img class="jellyfish" src="http://3.bp.blogspot.com/_OBIL8PqOcIY/SKWzZf_2zcI/AAAAAAAAAfU/H7vPOAzw5Sw/s200/Jellyfish.png">Spongebob Character Quiz</p>
+				</div>	
+			</div>
+		<form  class="col-8 offset-3" action="#" method="POST">	
+			<p>Answer the questions below to determine what Spongebob character you are</p><br>	
+			<p>1. Is Mayonaise an instrument?</p>
+			<div class="form-check">
+				<input  value="1" name="instrument" class="form-check-input" type="radio">
+				<label class="form-check-label">
+			    	Yes
+				</label><br>
+				<input value="2" name="instrument" class="form-check-input" type="radio">
+				<label class="form-check-label">
+			    	If you play it right
+				</label><br>
+				<input value="3" name="instrument" class="form-check-input" type="radio">
+				<label class="form-check-label">
+			    	Is horseradish an instrument?
+				</label><br>
+				<input value="4" name="instrument" class="form-check-input" type="radio">
+				<label class="form-check-label">
+			    	No
+				</label><br>
+				<input value="5" name="instrument" class="form-check-input" type="radio">
+				<label class="form-check-label">
+			    	Maybe
+				</label><br>
+			</div>
+
+			<p>2. Pick an image</p>
+			<div class="form-check">
+				<input value="1" name="items" class="form-check-input" type="radio">
+				<label class="form-check-label">
+			   		<img id="imgz" src="https://vignette.wikia.nocookie.net/spongebob/images/3/3b/Idiot_Box_032.png/revision/latest?cb=20140818161827">
+				</label><br>
+				<input value="3" name="items" class="form-check-input" type="radio">
+				<label class="form-check-label">
+			    	<img id="imgz" src="https://i2.wp.com/www.drawcentral.com/wp-content/uploads/2015/03/Spongebob-Jellyfish.jpg?fit=1080%2C1160">
+				</label><br>
+				<input value="4" name="items" class="form-check-input" type="radio">
+				<label class="form-check-label">
+			    	<img id="imgz" src="https://vignette.wikia.nocookie.net/spongebob/images/1/19/050b_-_Krusty_Krab_Training_Video_%28006%29.jpg/revision/latest/scale-to-width-down/350?cb=20170118001342">
+				</label><br>
+				<input value="2" name="items" class="form-check-input" type="radio">
+				<label class="form-check-label">
+			    	<img id="imgz" src="https://vignette.wikia.nocookie.net/spongebob/images/6/6b/Bubble_Buddy_character_in_Bubble_Buddy.png/revision/latest?cb=20150117225012">
+				</label><br>
+				<input value="5" name="items" class="form-check-input" type="radio">
+				<label class="form-check-label">
+			   		<img id="imgz" src="https://vignette.wikia.nocookie.net/spongebob/images/9/9d/Mr._Krabs%27_Navy_Locker_-_Dirty.png/revision/latest?cb=20150328085726">
+				</label><br>
+			<p>3. what is upsetting you today?</p>
+			<div class="form-check">
+				<input  value="5" name="instrument" class="form-check-input" type="radio">
+				<label class="form-check-label">
+			    	NOTHING!
+				</label><br>
+				<input value="4" name="instrument" class="form-check-input" type="radio">
+				<label class="form-check-label">
+			    	Existence
+				</label><br>
+				<input value="2" name="instrument" class="form-check-input" type="radio">
+				<label class="form-check-label">
+			    	My Leg!
+				</label><br>
+				<input value="5" name="instrument" class="form-check-input" type="radio">
+				<label class="form-check-label">
+			    	UHHHHHHHH
+				</label><br>
+				<input value="3" name="instrument" class="form-check-input" type="radio">
+				<label class="form-check-label">
+			    	Gravity
+				</label><br>
+			</div>
+			<p>1. what is upsetting you today?</p>
+			<div class="form-check">
+				<input  value="5" name="instrument" class="form-check-input" type="radio">
+				<label class="form-check-label">
+			    	NOTHING!
+				</label><br>
+				<input value="4" name="instrument" class="form-check-input" type="radio">
+				<label class="form-check-label">
+			    	Existence
+				</label><br>
+				<input value="2" name="instrument" class="form-check-input" type="radio">
+				<label class="form-check-label">
+			    	My Leg!
+				</label><br>
+				<input value="5" name="instrument" class="form-check-input" type="radio">
+				<label class="form-check-label">
+			    	UHHHHHHHH
+				</label><br>
+				<input value="3" name="instrument" class="form-check-input" type="radio">
+				<label class="form-check-label">
+			    	Gravity
+				</label><br>
+			</div>
+
+			</div>
+			<div>
+				<input type="submit" value="Find your house!" class="btn btn-primary cool-button">
+			</div>
+		</form>
+	</div>	
+</body>
+</html>
